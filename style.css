@@ -1,0 +1,51 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #3f3;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Intro Scrolling Text */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scrolling-text p {
+  white-space: nowrap;
+  font-size: 2rem;
+  animation: scrollText 7s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Splash Screen */
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+.logo-container img {
+  width: 500px;
+  height: auto;
+}
+
